@@ -1,0 +1,6 @@
+*.o
+*~
+*.swp
+moc_dialog*
+serverInterface
+Makefile
