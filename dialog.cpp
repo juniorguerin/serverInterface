@@ -15,7 +15,7 @@ Dialog::Dialog(QWidget *parent)
 
   velocityLabel = new QLabel(tr("&velocity (B/s):"));
   velocityLineEdit = new QLineEdit;
-  velocityLineEdit->setValidator(new QIntValidator(1, INT_MAX, this));
+  velocityLineEdit->setValidator(new QIntValidator(1, 10240000, this));
   velocityLabel->setBuddy(velocityLineEdit);
 
   okButton = new QPushButton(tr("&ok"));
