@@ -92,7 +92,7 @@ int Dialog::createConfigFile()
   string root(rootLineEdit->text().toStdString());
   string port(portLineEdit->text().toStdString());
   string velocity(velocityLineEdit->text().toStdString());
-  string configMessage(root + " \n" + port + " \n" + velocity + " \n");
+  string configMessage(root + "\n" + port + "\n" + velocity + "\n");
   QString configPathQStr(configPathStr.c_str());
   QString configFileQStr(configFileStr.c_str());
   QFile configFile(configPathQStr + configFileQStr);
