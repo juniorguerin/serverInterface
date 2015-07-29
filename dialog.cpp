@@ -176,7 +176,7 @@ int Dialog::verifyFields()
     return -1;
   }
 
-  if (velStr.size() > 0 && (!vel || vel > 10240000))
+  if (velStr.size() > 0 && (1 > vel || 10240000 < vel))
   {
     messageBox.information(this, "Invalid parameter", 
                            "Invalid velocity number!"
@@ -184,11 +184,11 @@ int Dialog::verifyFields()
     return -1;
   }
 
-  if (portStr.size() > 0 && (!port || port < 1024 || port > 65535))
+  if (portStr.size() > 0 && (1024 > port || 65535 < port))
   {
     messageBox.information(this, "Invalid parameter", 
                            "Invalid port number!"
-                           "\nInterval: (1024, 65535]");
+                           "\nInterval: [1024, 65535]");
     return -1;
   }
 
