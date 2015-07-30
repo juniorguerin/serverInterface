@@ -10,7 +10,7 @@
 
 using namespace std;
 
-const string configPathStr("/home/junior/Documentos/treinamento/serverConfig/");
+const string configPathStr("/home/nilson.junior/Documentos/treinamento/serverConfig/");
 const string pidFileStr("servidorWeb.pid");
 const string configFileStr("servidorWebConfig.txt");
 const int pidLength = 10;
